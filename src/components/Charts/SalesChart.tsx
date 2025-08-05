@@ -1,6 +1,6 @@
 'use client';
 
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
   { year: '2022', sales: 4000 },
@@ -10,16 +10,18 @@ const data = [
 
 export default function SalesChart() {
   return (
-    <div className="mt-6">
+    <div className="mt-6 w-full max-w-xl">
       <h2 className="text-xl font-semibold mb-2">Sales Chart (2022–2024)</h2>
-      <BarChart width={500} height={300} data={data}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="year" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Bar dataKey="sales" fill="#8884d8" />
-      </BarChart>
+      <ResponsiveContainer width="100%" height={300}>
+        <BarChart data={data}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="year" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar dataKey="sales" fill="#8884d8" />
+        </BarChart>
+      </ResponsiveContainer>
     </div>
   );
 }
