@@ -11,32 +11,18 @@
   "dependencies": {
     "next": "15.4.5",
     "react": "19.1.0",
-<<<<<<< HEAD
     "react-dom": "19.1.0",
     "recharts": "^3.1.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-=======
-    "react-dom": "19.1.0"
-  },
-  "devDependencies": {
->>>>>>> 36b1a6bc92ee72190b63db6b16b76d54987d2681
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-<<<<<<< HEAD
     "eslint": "^9",
     "eslint-config-next": "15.4.5",
     "tailwindcss": "^4",
-=======
-    "autoprefixer": "^10.4.21",
-    "init": "^0.1.2",
-    "npx": "^10.2.2",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.11",
->>>>>>> 36b1a6bc92ee72190b63db6b16b76d54987d2681
     "typescript": "^5"
   }
 }
