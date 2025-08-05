@@ -1,4 +1,5 @@
 import SalesChart from '@/components/Charts/SalesChart';
+import Link from 'next/link'; // ✅ Import Link
 
 export default function Dashboard() {
   return (
@@ -8,12 +9,12 @@ export default function Dashboard() {
         This is your dashboard page.
       </p>
       <SalesChart />
-      <a
-        href="/"
+      <Link
+        href="/" // 
         className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition"
       >
         Go to Home
-      </a>
+      </Link>
     </div>
   );
 }
